@@ -1,0 +1,15 @@
+.grid{
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-gap: 5rem;
+}
+
+.img{
+    width: 80%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}

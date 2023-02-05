@@ -1,0 +1,15 @@
+<div class="grid">
+    <img class="img" src={{person.photoPath}} alt="">
+    <div class="info">
+        <div>{{person.name}}</div>
+        <div>{{person.lastName}}</div>
+        <div>{{person.birth|date:"dd-MMMM-yyyy"}}</div>
+        <div>{{person.city|uppercase}}</div>
+        <div>{{person.email}}</div>
+        <div>{{person.phone}}</div>
+        <div>{{person.workExperience}}</div>
+        <div>
+            <span *ngFor="let item of person.skills"> {{item|lowercase}} </span>
+        </div>
+    </div>
+</div>
